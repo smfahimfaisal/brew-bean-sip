@@ -97,7 +97,7 @@ function CoffeePage() {
           <p className="mt-4 text-foreground/80">{coffee.description}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {coffee.notes.map((n) => (
+            {coffee.notes.map((n: string) => (
               <span
                 key={n}
                 className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
