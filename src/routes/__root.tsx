@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Brew & Bean — Small-batch coffee, roasted weekly" },
+      { name: "description", content: "Lovable Generated Project" },
+      { property: "og:description", content: "Lovable Generated Project" },
+      { name: "twitter:description", content: "Lovable Generated Project" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9063f44-fb72-415c-b6e2-0737beba884a/id-preview-d30bf6b9--c4e9fc45-97b9-45e3-8bcd-e2d85f724526.lovable.app-1780238251507.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a9063f44-fb72-415c-b6e2-0737beba884a/id-preview-d30bf6b9--c4e9fc45-97b9-45e3-8bcd-e2d85f724526.lovable.app-1780238251507.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
