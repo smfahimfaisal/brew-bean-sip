@@ -59,7 +59,7 @@ const schema = z.object({
     .regex(/^(0[1-9]|1[0-2])\/\d{2}$/, "Use MM/YY")
     .refine(
       (v) => {
-        const [mm, yy] = v.split("/").map((n) => parseInt(n, 10));
+        const [mm, yy] = v.split("/").map((n: string) => parseInt(n, 10));
         const now = new Date();
         const exp = new Date(2000 + yy, mm); // first of next month
         return exp > now;
